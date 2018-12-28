@@ -7,7 +7,7 @@
     "typecheck": "tsc",
     "lint": "eslint . --ext \".js,.ts,.tsx\"",
     "test": "jest --watch",
-    "cover": "jest --coverage"
+    "cover": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "Nam Nguyen <nam.nguyen.node@gmail.com> (https://namnguyen.design)",
@@ -25,7 +25,8 @@
     "jest-runner-eslint": "^0.7.1",
     "jest-runner-tsc": "^1.3.2",
     "pluggable-babel-eslint": "^0.3.0",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "coveralls": "^3.0.2"
   },
   "dependencies": {
     "@types/node": "10.12.18"
