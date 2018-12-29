@@ -6,14 +6,13 @@ const selectionSort = (list: number[]) => {
     let minIndex = i
 
     for (let j = i + 1; j < length; j += 1) {
-      if (list[j] < list[minIndex]) {
+      if (result[j] < result[minIndex]) {
         minIndex = j
       }
     }
 
-    if (minIndex !== i) {
-      ;[result[i], result[minIndex]] = [result[minIndex], result[i]]
-    }
+    if (minIndex !== i)
+      [result[i], result[minIndex]] = [result[minIndex], result[i]]
   }
   return result
 }
