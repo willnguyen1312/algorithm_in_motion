@@ -10,7 +10,7 @@ const mergeTwoSortedList = (leftList: number[], rightList: number[]) => {
   return result.concat(leftList).concat(rightList)
 }
 
-const mergeSort = (list: number[]) => {
+const mergesort = (list: number[]) => {
   if (list.length < 2) {
     return list
   }
@@ -19,10 +19,10 @@ const mergeSort = (list: number[]) => {
   const leftList = list.slice(0, middleIndex)
   const rightList = list.slice(middleIndex)
 
-  const leftSortedList = mergeSort(leftList)
-  const rightSortedList = mergeSort(rightList)
+  const leftSortedList = mergesort(leftList)
+  const rightSortedList = mergesort(rightList)
 
   return mergeTwoSortedList(leftSortedList, rightSortedList)
 }
 
-export { mergeSort as quickSort }
+export { mergesort }
