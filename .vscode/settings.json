@@ -2,5 +2,6 @@
     "prettier.eslintIntegration": true,
     "eslint.enable": true,
     "tslint.enable": false,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "jest.autoEnable": false
 }
